@@ -1,12 +1,43 @@
-import React, { useState } from "react";
+import React, { useState,useEffect,useContext } from "react";
 
 import "./App.css";
+import HomePage from "./components/pages/HomePage";
+
+import About from "./components/pages/About";
+import Contact from "./components/pages/Contact";
 // import InputField from './components/InputField';
 // import { Todo } from './model';
 // import TodoList from './components/TodoList';
 // import { DragDropContext,DropResult } from 'react-beautiful-dnd';
 
+
+
 const App: React.FC = () => {
+  // const [count ,setCount ] = useState(0 as number)
+  // const increment=()=>{
+  //   setCount(count+1);
+  // }
+  // const decrement=()=>{
+
+  //   if(count === 0){
+  //     setCount(0)
+  //   }else{ 
+  //     setCount(count-1);
+  //   }
+
+  // } 
+  return(
+    <>
+      {/* <button onClick={increment}>+</button>
+      <span>{count}</span>
+      <button onClick={decrement}>-</button> */}
+     <useContextHook/>
+    </>
+  ) 
+};
+
+export default App;
+
   // const [ todo, setTodo ] = useState<string>("");
   // const [ todos, setTodos ] = useState<Todo[]>([])
   // const [ completedTodos, setCompletedTodos ] = useState<Todo[]>([]);
@@ -71,12 +102,3 @@ const App: React.FC = () => {
   //       />
   //     </div>
   //   </DragDropContext>
-
-  return(
-    <>
-      
-    </>
-  ) 
-};
-
-export default App;
